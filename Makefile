@@ -7,7 +7,7 @@ ifeq ($(shell uname),Darwin)
 TARGET = target/debug/libmath.$(EXT)
 	 
 $(TARGET): src/lib.rs Cargo.toml
-	cargo build
+	cargo rustc -- --emit=obj
 
 test: $(TARGET)
 	g++ src/main.cpp -L ./target/debug/ -lmath -o run
