@@ -5,7 +5,6 @@ FQBN = STMicroelectronics:stm32:GenF4:pnum=GENERIC_F411CEUX,usb=CDCgen
 PORT = /dev/ttyACM0
 
 OBJ = $(PWD)/obj
-LIB = ../src
 DFU = $(OBJ)/$(SKETCH).dfu 
 HEX = $(OBJ)/$(SKETCH).ino.hex
 
@@ -15,8 +14,8 @@ all: $(HEX)
 $(DFU): $(HEX)
 	./dfuse-pack.py -i $(HEX) $(DFU)
 
-$(HEX): $(SKETCH).ino $(LIB)/*.h
-	arduino-cli compile --fqbn $(FQBN) --libraries $(LIB) --build-path $(OBJ) --verbose
+$(HEX): $(SKETCH).ino
+	arduino-cli compile --fqbn $(FQBN) --build-path $(OBJ)
 	rm -f *.bin *.elf
 
 unbrick: $(DFU)
