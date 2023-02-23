@@ -15,7 +15,11 @@
 -Wl,--entry=Reset_Handler \
 -Wl,--unresolved-symbols=report-all \
 -Wl,--warn-common \
--Wl,--default-script=/home/levys/.arduino15/packages/STMicroelectronics/hardware/stm32/2.3.0/variants/STM32F4xx/F411C\(C-E\)\(U-Y\)/ldscript.ld -Wl,--script=/home/levys/.arduino15/packages/STMicroelectronics/hardware/stm32/2.3.0/system/ldscript.ld -Wl,-Map,/mnt/c/Users/levys/Desktop/ardurust/sketch/obj/sketch.ino.map -L/home/levys/.arduino15/packages/STMicroelectronics/tools/CMSIS/5.7.0/CMSIS/DSP/Lib/GCC/ -larm_cortexM4lf_math -o /mnt/c/Users/levys/Desktop/ardurust/sketch/obj/sketch.ino.elf -L/mnt/c/Users/levys/Desktop/ardurust/sketch/obj -Wl,--start-group /mnt/c/Users/levys/Desktop/ardurust/sketch/obj/sketch/SrcWrapper.cpp.o \
+-Wl,--default-script=/home/levys/.arduino15/packages/STMicroelectronics/hardware/stm32/2.3.0/variants/STM32F4xx/F411C\(C-E\)\(U-Y\)/ldscript.ld \
+-Wl,--script=/home/levys/.arduino15/packages/STMicroelectronics/hardware/stm32/2.3.0/system/ldscript.ld \
+-Wl,-Map,/mnt/c/Users/levys/Desktop/ardurust/sketch/obj/sketch.ino.map -L/home/levys/.arduino15/packages/STMicroelectronics/tools/CMSIS/5.7.0/CMSIS/DSP/Lib/GCC/ -larm_cortexM4lf_math -o /mnt/c/Users/levys/Desktop/ardurust/sketch/obj/sketch.ino.elf -L/mnt/c/Users/levys/Desktop/ardurust/sketch/obj \
+-Wl,--start-group \
+/mnt/c/Users/levys/Desktop/ardurust/sketch/obj/sketch/SrcWrapper.cpp.o \
 /mnt/c/Users/levys/Desktop/ardurust/sketch/obj/sketch/sketch.ino.cpp.o \
 /mnt/c/Users/levys/Desktop/ardurust/sketch/obj/libraries/SrcWrapper/syscalls.c.o \
 /mnt/c/Users/levys/Desktop/ardurust/sketch/obj/libraries/SrcWrapper/HardwareTimer.cpp.o \
