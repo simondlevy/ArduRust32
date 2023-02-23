@@ -1,9 +1,9 @@
 Archive member included to satisfy reference by file (symbol)
 
-./libmath.a(math-69056c16d408d5cb.nvpftyi4pj6hrjz.rcgu.o)
+./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
                               ./obj/sketch/sketch.ino.cpp.o (add)
 ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
-                              ./libmath.a(math-69056c16d408d5cb.nvpftyi4pj6hrjz.rcgu.o) (core::panicking::panic)
+                              ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o) (core::panicking::panic)
 ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.104.rcgu.o)
                               ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o) (__aeabi_memclr4)
 ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.121.rcgu.o)
@@ -3103,7 +3103,7 @@ Discarded input sections
  .text          0x0000000000000000        0x0 ./obj/core/variant_generic.cpp.o
  .data          0x0000000000000000        0x0 ./obj/core/variant_generic.cpp.o
  .bss           0x0000000000000000        0x0 ./obj/core/variant_generic.cpp.o
- .text          0x0000000000000000        0x0 ./libmath.a(math-69056c16d408d5cb.nvpftyi4pj6hrjz.rcgu.o)
+ .text          0x0000000000000000        0x0 ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
  .text          0x0000000000000000        0x0 ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
  .llvmbc        0x0000000000000000   0x1c76e0 ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
  .llvmcmd       0x0000000000000000        0x0 ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
@@ -11458,7 +11458,7 @@ LOAD /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eab
  .text.SystemClock_Config
                 0x0000000008002d04       0x9c ./obj/core/generic_clock.c.o
                 0x0000000008002d04                SystemClock_Config
- .text.add      0x0000000008002da0       0x3a ./libmath.a(math-69056c16d408d5cb.nvpftyi4pj6hrjz.rcgu.o)
+ .text.add      0x0000000008002da0       0x3a ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
                 0x0000000008002da0                add
  .text._ZN4core3ptr102drop_in_place$LT$$RF$core..iter..adapters..copied..Copied$LT$core..slice..iter..Iter$LT$u8$GT$$GT$$GT$17hcb3dcf446120b254E
                 0x0000000008002dda        0x2 ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
@@ -12050,12 +12050,12 @@ LOAD /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eab
                 0x00000000080053c0       0x90 ./obj/core/variant_generic.cpp.o
                 0x00000000080053c0                digitalPin
  .rodata..L__unnamed_2
-                0x0000000008005450        0xa ./libmath.a(math-69056c16d408d5cb.nvpftyi4pj6hrjz.rcgu.o)
+                0x0000000008005450        0xa ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
  *fill*         0x000000000800545a        0x2 
  .rodata..L__unnamed_1
-                0x000000000800545c       0x10 ./libmath.a(math-69056c16d408d5cb.nvpftyi4pj6hrjz.rcgu.o)
+                0x000000000800545c       0x10 ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
  *fill*         0x000000000800546c        0x4 
- .rodata.str.0  0x0000000008005470       0x1c ./libmath.a(math-69056c16d408d5cb.nvpftyi4pj6hrjz.rcgu.o)
+ .rodata.str.0  0x0000000008005470       0x1c ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
  .rodata..Lanon.65041ed55599e7132a9e5e5034b08ed2.2
                 0x000000000800548c        0x0 ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
  .rodata..Lanon.65041ed55599e7132a9e5e5034b08ed2.230
@@ -12122,7 +12122,7 @@ LOAD /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eab
                 0x0000000008005718                __exidx_start = .
  *(.ARM.exidx*)
  .ARM.exidx.text.add
-                0x0000000008005718        0x8 ./libmath.a(math-69056c16d408d5cb.nvpftyi4pj6hrjz.rcgu.o)
+                0x0000000008005718        0x8 ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
  .ARM.exidx.text._ZN4core3ptr102drop_in_place$LT$$RF$core..iter..adapters..copied..Copied$LT$core..slice..iter..Iter$LT$u8$GT$$GT$$GT$17hcb3dcf446120b254E
                 0x0000000008005720        0x0 ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
                                           0x8 (size before relaxing)
@@ -12436,7 +12436,7 @@ LOAD /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eab
  .ARM.attributes
                 0x000000000000059a       0x34 ./obj/core/variant_generic.cpp.o
  .ARM.attributes
-                0x00000000000005ce       0x3a ./libmath.a(math-69056c16d408d5cb.nvpftyi4pj6hrjz.rcgu.o)
+                0x00000000000005ce       0x3a ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
  .ARM.attributes
                 0x0000000000000608       0x3a ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
  .ARM.attributes
@@ -12598,7 +12598,7 @@ LOAD /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eab
 .note.GNU-stack
                 0x0000000000000000        0x0
  .note.GNU-stack
-                0x0000000000000000        0x0 ./libmath.a(math-69056c16d408d5cb.nvpftyi4pj6hrjz.rcgu.o)
+                0x0000000000000000        0x0 ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
  .note.GNU-stack
                 0x0000000000000000        0x0 ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
  .note.GNU-stack
@@ -12619,7 +12619,7 @@ LOAD /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eab
                 0x0000000000000000        0x0 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.2.rcgu.o)
 
 .debug_abbrev   0x0000000000000000      0x719
- .debug_abbrev  0x0000000000000000       0x4d ./libmath.a(math-69056c16d408d5cb.nvpftyi4pj6hrjz.rcgu.o)
+ .debug_abbrev  0x0000000000000000       0x4d ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
  .debug_abbrev  0x000000000000004d      0x25e ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
  .debug_abbrev  0x00000000000002ab       0x31 ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.140.rcgu.o)
  .debug_abbrev  0x00000000000002dc       0x31 ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.5.rcgu.o)
@@ -12631,7 +12631,7 @@ LOAD /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eab
  .debug_abbrev  0x0000000000000624       0xf5 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.2.rcgu.o)
 
 .debug_info     0x0000000000000000    0x24736
- .debug_info    0x0000000000000000       0x66 ./libmath.a(math-69056c16d408d5cb.nvpftyi4pj6hrjz.rcgu.o)
+ .debug_info    0x0000000000000000       0x66 ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
  .debug_info    0x0000000000000066    0x22a21 ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
  .debug_info    0x0000000000022a87       0x4b ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.140.rcgu.o)
  .debug_info    0x0000000000022ad2       0x4b ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.5.rcgu.o)
@@ -12644,7 +12644,7 @@ LOAD /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eab
 
 .debug_aranges  0x0000000000000000     0x1ed8
  .debug_aranges
-                0x0000000000000000       0x20 ./libmath.a(math-69056c16d408d5cb.nvpftyi4pj6hrjz.rcgu.o)
+                0x0000000000000000       0x20 ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
  .debug_aranges
                 0x0000000000000020     0x1d40 ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
  .debug_aranges
@@ -12664,32 +12664,32 @@ LOAD /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eab
  .debug_aranges
                 0x0000000000001eb8       0x20 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.2.rcgu.o)
 
-.debug_str      0x0000000000000000    0x3ebc2
- .debug_str     0x0000000000000000       0xa4 ./libmath.a(math-69056c16d408d5cb.nvpftyi4pj6hrjz.rcgu.o)
-                                         0xa8 (size before relaxing)
- .debug_str     0x00000000000000a4    0x3ca77 ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
+.debug_str      0x0000000000000000    0x3ebaf
+ .debug_str     0x0000000000000000       0x91 ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
+                                         0x95 (size before relaxing)
+ .debug_str     0x0000000000000091    0x3ca77 ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
                                       0x3cd4b (size before relaxing)
- .debug_str     0x000000000003cb1b       0xe5 ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.140.rcgu.o)
+ .debug_str     0x000000000003cb08       0xe5 ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.140.rcgu.o)
                                         0x122 (size before relaxing)
- .debug_str     0x000000000003cc00       0x7e ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.5.rcgu.o)
+ .debug_str     0x000000000003cbed       0x7e ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.5.rcgu.o)
                                         0x116 (size before relaxing)
- .debug_str     0x000000000003cc7e       0xcb ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.7.rcgu.o)
+ .debug_str     0x000000000003cc6b       0xcb ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.7.rcgu.o)
                                         0x163 (size before relaxing)
- .debug_str     0x000000000003cd49      0x39a ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.1.rcgu.o)
+ .debug_str     0x000000000003cd36      0x39a ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.1.rcgu.o)
                                         0x512 (size before relaxing)
- .debug_str     0x000000000003d0e3     0x157a ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.100.rcgu.o)
+ .debug_str     0x000000000003d0d0     0x157a ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.100.rcgu.o)
                                        0x16ed (size before relaxing)
- .debug_str     0x000000000003e65d      0x3ce ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.210.rcgu.o)
+ .debug_str     0x000000000003e64a      0x3ce ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.210.rcgu.o)
                                         0x593 (size before relaxing)
- .debug_str     0x000000000003ea2b       0xf1 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.0.rcgu.o)
+ .debug_str     0x000000000003ea18       0xf1 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.0.rcgu.o)
                                         0x18b (size before relaxing)
- .debug_str     0x000000000003eb1c       0xa6 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.2.rcgu.o)
+ .debug_str     0x000000000003eb09       0xa6 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.2.rcgu.o)
                                         0x3ff (size before relaxing)
 
 .debug_pubnames
                 0x0000000000000000    0x156d4
  .debug_pubnames
-                0x0000000000000000       0x23 ./libmath.a(math-69056c16d408d5cb.nvpftyi4pj6hrjz.rcgu.o)
+                0x0000000000000000       0x23 ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
  .debug_pubnames
                 0x0000000000000023    0x14d4e ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
  .debug_pubnames
@@ -12712,7 +12712,7 @@ LOAD /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eab
 .debug_pubtypes
                 0x0000000000000000      0x66a
  .debug_pubtypes
-                0x0000000000000000       0x1a ./libmath.a(math-69056c16d408d5cb.nvpftyi4pj6hrjz.rcgu.o)
+                0x0000000000000000       0x1a ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
  .debug_pubtypes
                 0x000000000000001a       0x12 ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
  .debug_pubtypes
@@ -12733,7 +12733,7 @@ LOAD /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eab
                 0x0000000000000410      0x25a ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.2.rcgu.o)
 
 .debug_frame    0x0000000000000000     0x6764
- .debug_frame   0x0000000000000000       0x30 ./libmath.a(math-69056c16d408d5cb.nvpftyi4pj6hrjz.rcgu.o)
+ .debug_frame   0x0000000000000000       0x30 ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
  .debug_frame   0x0000000000000030     0x63bc ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
  .debug_frame   0x00000000000063ec       0x24 ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.140.rcgu.o)
  .debug_frame   0x0000000000006410       0x24 ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.5.rcgu.o)
@@ -12745,7 +12745,7 @@ LOAD /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eab
  .debug_frame   0x0000000000006734       0x30 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.2.rcgu.o)
 
 .debug_line     0x0000000000000000    0x252fb
- .debug_line    0x0000000000000000       0x43 ./libmath.a(math-69056c16d408d5cb.nvpftyi4pj6hrjz.rcgu.o)
+ .debug_line    0x0000000000000000       0x43 ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
  .debug_line    0x0000000000000043    0x23c5a ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
  .debug_line    0x0000000000023c9d       0x52 ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.140.rcgu.o)
  .debug_line    0x0000000000023cef       0x43 ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.5.rcgu.o)
@@ -15357,7 +15357,7 @@ abort                                             /home/levys/.arduino15/package
                                                   /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(functional.o)
                                                   /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-assert.o)
 adc_read_value                                    ./obj/libraries/SrcWrapper/stm32/analog.cpp.o
-add                                               ./libmath.a(math-69056c16d408d5cb.nvpftyi4pj6hrjz.rcgu.o)
+add                                               ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
                                                   ./obj/sketch/sketch.ino.cpp.o
 analogInputPin                                    ./obj/core/variant_generic.cpp.o
                                                   /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
@@ -15741,7 +15741,7 @@ core::panic::panic_info::PanicInfo::payload       ./libmath.a(core-d535b8634ff0e
 core::panicking::assert_failed_inner              ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
 core::panicking::const_panic_fmt                  ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
 core::panicking::panic                            ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
-                                                  ./libmath.a(math-69056c16d408d5cb.nvpftyi4pj6hrjz.rcgu.o)
+                                                  ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
 core::panicking::panic_bounds_check               ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
 core::panicking::panic_fmt                        ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
                                                   ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.2.rcgu.o)
