@@ -3,12 +3,14 @@ ifeq ($(shell uname),Darwin)
 	else
 	    EXT := so
 	endif
+
+TARGET = target/debug/libmath.$(EXT)
 	 
-all: target/debug/libmath.$(EXT)
+all: $(TARGET)
 	g++ src/main.cpp -L ./target/debug/ -lmath -o run
 	LD_LIBRARY_PATH=./target/debug/ ./run
 			 
-target/debug/libmath.$(EXT): src/lib.rs Cargo.toml
+$(TARGET): src/lib.rs Cargo.toml
 	cargo build
 		 
 clean:
