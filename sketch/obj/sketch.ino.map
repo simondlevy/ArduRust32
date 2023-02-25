@@ -11021,7 +11021,7 @@ LOAD /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eab
                 0x0000000008000000                g_pfnVectors
                 0x0000000008000198                . = ALIGN (0x4)
 
-.text           0x0000000008000198     0x50d8
+.text           0x0000000008000198     0x50a8
                 0x0000000008000198                . = ALIGN (0x4)
  *(.text)
  *(.text*)
@@ -11784,420 +11784,420 @@ LOAD /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eab
                 0x00000000080041c4       0x1c /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_desc.c.o)
                 0x00000000080041c4                USBD_Class_InterfaceStrDescriptor
  .text._Z14serialEventRunv
-                0x00000000080041e0       0x4c /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(WSerial.cpp.o)
+                0x00000000080041e0       0x34 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(WSerial.cpp.o)
                 0x00000000080041e0                serialEventRun()
  .text.CDC_TransmitQueue_Init
-                0x000000000800422c        0xc /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
-                0x000000000800422c                CDC_TransmitQueue_Init
+                0x0000000008004214        0xc /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
+                0x0000000008004214                CDC_TransmitQueue_Init
  .text.CDC_TransmitQueue_WriteSize
-                0x0000000008004238       0x20 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
-                0x0000000008004238                CDC_TransmitQueue_WriteSize
+                0x0000000008004220       0x20 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
+                0x0000000008004220                CDC_TransmitQueue_WriteSize
  .text.CDC_TransmitQueue_ReadSize
-                0x0000000008004258       0x22 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
-                0x0000000008004258                CDC_TransmitQueue_ReadSize
+                0x0000000008004240       0x22 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
+                0x0000000008004240                CDC_TransmitQueue_ReadSize
  .text.CDC_TransmitQueue_Enqueue
-                0x000000000800427a       0x46 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
-                0x000000000800427a                CDC_TransmitQueue_Enqueue
+                0x0000000008004262       0x46 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
+                0x0000000008004262                CDC_TransmitQueue_Enqueue
  .text.CDC_TransmitQueue_ReadBlock
-                0x00000000080042c0       0x36 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
-                0x00000000080042c0                CDC_TransmitQueue_ReadBlock
+                0x00000000080042a8       0x36 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
+                0x00000000080042a8                CDC_TransmitQueue_ReadBlock
  .text.CDC_TransmitQueue_CommitRead
-                0x00000000080042f6       0x14 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
-                0x00000000080042f6                CDC_TransmitQueue_CommitRead
+                0x00000000080042de       0x14 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
+                0x00000000080042de                CDC_TransmitQueue_CommitRead
  .text.CDC_ReceiveQueue_Init
-                0x000000000800430a       0x12 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
-                0x000000000800430a                CDC_ReceiveQueue_Init
+                0x00000000080042f2       0x12 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
+                0x00000000080042f2                CDC_ReceiveQueue_Init
  .text.CDC_ReceiveQueue_ReserveBlock
-                0x000000000800431c       0x72 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
-                0x000000000800431c                CDC_ReceiveQueue_ReserveBlock
+                0x0000000008004304       0x72 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
+                0x0000000008004304                CDC_ReceiveQueue_ReserveBlock
  .text.CDC_ReceiveQueue_CommitBlock
-                0x000000000800438e       0x36 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
-                0x000000000800438e                CDC_ReceiveQueue_CommitBlock
+                0x0000000008004376       0x36 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
+                0x0000000008004376                CDC_ReceiveQueue_CommitBlock
  .text.CDC_ReceiveQueue_ReadSize
-                0x00000000080043c4       0x50 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
-                0x00000000080043c4                CDC_ReceiveQueue_ReadSize
+                0x00000000080043ac       0x50 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
+                0x00000000080043ac                CDC_ReceiveQueue_ReadSize
  .text.CDC_ReceiveQueue_Dequeue
-                0x0000000008004414       0x6e /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
-                0x0000000008004414                CDC_ReceiveQueue_Dequeue
+                0x00000000080043fc       0x6e /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
+                0x00000000080043fc                CDC_ReceiveQueue_Dequeue
  .text.CDC_ReceiveQueue_Peek
-                0x0000000008004482       0x4c /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
-                0x0000000008004482                CDC_ReceiveQueue_Peek
+                0x000000000800446a       0x4c /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
+                0x000000000800446a                CDC_ReceiveQueue_Peek
  .text.CDC_ReceiveQueue_Read
-                0x00000000080044ce       0x90 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
-                0x00000000080044ce                CDC_ReceiveQueue_Read
+                0x00000000080044b6       0x90 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
+                0x00000000080044b6                CDC_ReceiveQueue_Read
  .text.CDC_ReceiveQueue_ReadUntil
-                0x000000000800455e       0xce /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
-                0x000000000800455e                CDC_ReceiveQueue_ReadUntil
+                0x0000000008004546       0xce /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(cdc_queue.c.o)
+                0x0000000008004546                CDC_ReceiveQueue_ReadUntil
  .text.USBD_CDC_EP0_RxReady
-                0x000000000800462c       0x2e /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
- *fill*         0x000000000800465a        0x2 
+                0x0000000008004614       0x2e /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
+ *fill*         0x0000000008004642        0x2 
  .text.USBD_CDC_GetFSCfgDesc
-                0x000000000800465c        0xc /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
+                0x0000000008004644        0xc /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
  .text.USBD_CDC_GetHSCfgDesc
-                0x0000000008004668        0xc /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
+                0x0000000008004650        0xc /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
  .text.USBD_CDC_GetOtherSpeedCfgDesc
-                0x0000000008004674        0xc /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
+                0x000000000800465c        0xc /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
  .text.USBD_CDC_GetDeviceQualifierDescriptor
-                0x0000000008004680        0xc /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
-                0x0000000008004680                USBD_CDC_GetDeviceQualifierDescriptor
+                0x0000000008004668        0xc /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
+                0x0000000008004668                USBD_CDC_GetDeviceQualifierDescriptor
  .text.USBD_CDC_DataOut
-                0x000000000800468c       0x2a /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
+                0x0000000008004674       0x2a /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
  .text.USBD_CDC_DataIn
-                0x00000000080046b6       0x5e /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
+                0x000000000800469e       0x5e /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
  .text.USBD_CDC_Setup
-                0x0000000008004714      0x100 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
+                0x00000000080046fc      0x100 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
  .text.USBD_CDC_DeInit
-                0x0000000008004814       0x44 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
+                0x00000000080047fc       0x44 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
  .text.USBD_CDC_Init
-                0x0000000008004858       0xaa /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
+                0x0000000008004840       0xaa /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
  .text.USBD_CDC_RegisterInterface
-                0x0000000008004902        0xe /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
-                0x0000000008004902                USBD_CDC_RegisterInterface
+                0x00000000080048ea        0xe /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
+                0x00000000080048ea                USBD_CDC_RegisterInterface
  .text.USBD_CDC_SetTxBuffer
-                0x0000000008004910       0x16 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
-                0x0000000008004910                USBD_CDC_SetTxBuffer
+                0x00000000080048f8       0x16 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
+                0x00000000080048f8                USBD_CDC_SetTxBuffer
  .text.USBD_CDC_SetRxBuffer
-                0x0000000008004926       0x12 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
-                0x0000000008004926                USBD_CDC_SetRxBuffer
+                0x000000000800490e       0x12 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
+                0x000000000800490e                USBD_CDC_SetRxBuffer
  .text.USBD_CDC_TransmitPacket
-                0x0000000008004938       0x30 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
-                0x0000000008004938                USBD_CDC_TransmitPacket
+                0x0000000008004920       0x30 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
+                0x0000000008004920                USBD_CDC_TransmitPacket
  .text.USBD_CDC_ReceivePacket
-                0x0000000008004968       0x2e /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
-                0x0000000008004968                USBD_CDC_ReceivePacket
+                0x0000000008004950       0x2e /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
+                0x0000000008004950                USBD_CDC_ReceivePacket
  .text.USBD_CDC_ClearBuffer
-                0x0000000008004996       0x1a /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
-                0x0000000008004996                USBD_CDC_ClearBuffer
+                0x000000000800497e       0x1a /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_cdc.c.o)
+                0x000000000800497e                USBD_CDC_ClearBuffer
  .text._ZN14HardwareSerial9availableEv
-                0x00000000080049b0       0x10 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
-                0x00000000080049b0                HardwareSerial::available()
+                0x0000000008004998       0x10 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
+                0x0000000008004998                HardwareSerial::available()
  .text._ZN14HardwareSerial4peekEv
-                0x00000000080049c0       0x1a /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
-                0x00000000080049c0                HardwareSerial::peek()
+                0x00000000080049a8       0x1a /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
+                0x00000000080049a8                HardwareSerial::peek()
  .text._ZN14HardwareSerial17availableForWriteEv
-                0x00000000080049da       0x1c /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
-                0x00000000080049da                HardwareSerial::availableForWrite()
+                0x00000000080049c2       0x1c /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
+                0x00000000080049c2                HardwareSerial::availableForWrite()
  .text._ZN14HardwareSerial5writeEh
-                0x00000000080049f6       0x18 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
-                0x00000000080049f6                HardwareSerial::write(unsigned char)
- *fill*         0x0000000008004a0e        0x2 
+                0x00000000080049de       0x18 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
+                0x00000000080049de                HardwareSerial::write(unsigned char)
+ *fill*         0x00000000080049f6        0x2 
  .text._ZN14HardwareSerial16_tx_complete_irqEP8serial_s
-                0x0000000008004a10       0x64 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
-                0x0000000008004a10                HardwareSerial::_tx_complete_irq(serial_s*)
+                0x00000000080049f8       0x64 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
+                0x00000000080049f8                HardwareSerial::_tx_complete_irq(serial_s*)
  .text._ZN14HardwareSerial5writeEPKhj
-                0x0000000008004a74       0xe4 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
-                0x0000000008004a74                HardwareSerial::write(unsigned char const*, unsigned int)
+                0x0000000008004a5c       0xe4 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
+                0x0000000008004a5c                HardwareSerial::write(unsigned char const*, unsigned int)
  .text._ZN14HardwareSerial5flushEv
-                0x0000000008004b58       0x14 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
-                0x0000000008004b58                HardwareSerial::flush()
+                0x0000000008004b40       0x14 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
+                0x0000000008004b40                HardwareSerial::flush()
  .text._ZN14HardwareSerial4initE7PinNameS0_S0_S0_
-                0x0000000008004b6c       0x32 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
-                0x0000000008004b6c                HardwareSerial::init(PinName, PinName, PinName, PinName)
- *fill*         0x0000000008004b9e        0x2 
+                0x0000000008004b54       0x32 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
+                0x0000000008004b54                HardwareSerial::init(PinName, PinName, PinName, PinName)
+ *fill*         0x0000000008004b86        0x2 
  .text._ZN14HardwareSerial5setRxEm
-                0x0000000008004ba0       0x48 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
-                0x0000000008004ba0                HardwareSerial::setRx(unsigned long)
+                0x0000000008004b88       0x48 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
+                0x0000000008004b88                HardwareSerial::setRx(unsigned long)
  .text._ZN14HardwareSerial5setTxEm
-                0x0000000008004be8       0x48 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
-                0x0000000008004be8                HardwareSerial::setTx(unsigned long)
+                0x0000000008004bd0       0x48 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
+                0x0000000008004bd0                HardwareSerial::setTx(unsigned long)
  .text._ZN14HardwareSerialC2EPv16HalfDuplexMode_t
-                0x0000000008004c30       0x7c /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
-                0x0000000008004c30                HardwareSerial::HardwareSerial(void*, HalfDuplexMode_t)
-                0x0000000008004c30                HardwareSerial::HardwareSerial(void*, HalfDuplexMode_t)
+                0x0000000008004c18       0x7c /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
+                0x0000000008004c18                HardwareSerial::HardwareSerial(void*, HalfDuplexMode_t)
+                0x0000000008004c18                HardwareSerial::HardwareSerial(void*, HalfDuplexMode_t)
  .text._ZN14HardwareSerial18enableHalfDuplexRxEv
-                0x0000000008004cac       0x2c /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
-                0x0000000008004cac                HardwareSerial::enableHalfDuplexRx()
+                0x0000000008004c94       0x2c /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
+                0x0000000008004c94                HardwareSerial::enableHalfDuplexRx()
  .text._ZN14HardwareSerial4readEv
-                0x0000000008004cd8       0x2e /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
-                0x0000000008004cd8                HardwareSerial::read()
- *fill*         0x0000000008004d06        0x2 
- .text.startup._GLOBAL__sub_I_Serial1
-                0x0000000008004d08       0x2c /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
+                0x0000000008004cc0       0x2e /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
+                0x0000000008004cc0                HardwareSerial::read()
+ *fill*         0x0000000008004cee        0x2 
+ .text.startup._GLOBAL__sub_I_Serial2
+                0x0000000008004cf0       0x14 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
  .text._ZN6Stream9timedReadEv
-                0x0000000008004d34       0x2a /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(Stream.cpp.o)
-                0x0000000008004d34                Stream::timedRead()
+                0x0000000008004d04       0x2a /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(Stream.cpp.o)
+                0x0000000008004d04                Stream::timedRead()
  .text._ZN6Stream9readBytesEPcj
-                0x0000000008004d5e       0x2a /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(Stream.cpp.o)
-                0x0000000008004d5e                Stream::readBytes(char*, unsigned int)
+                0x0000000008004d2e       0x2a /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(Stream.cpp.o)
+                0x0000000008004d2e                Stream::readBytes(char*, unsigned int)
  .text._ZN6Stream14readBytesUntilEcPcj
-                0x0000000008004d88       0x30 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(Stream.cpp.o)
-                0x0000000008004d88                Stream::readBytesUntil(char, char*, unsigned int)
+                0x0000000008004d58       0x30 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(Stream.cpp.o)
+                0x0000000008004d58                Stream::readBytesUntil(char, char*, unsigned int)
  .text._ZN9USBSerial5writeEh
-                0x0000000008004db8       0x18 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
-                0x0000000008004db8                USBSerial::write(unsigned char)
+                0x0000000008004d88       0x18 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
+                0x0000000008004d88                USBSerial::write(unsigned char)
  .text._ZN9USBSerial17availableForWriteEv
-                0x0000000008004dd0        0xc /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
-                0x0000000008004dd0                USBSerial::availableForWrite()
+                0x0000000008004da0        0xc /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
+                0x0000000008004da0                USBSerial::availableForWrite()
  .text._ZN9USBSerial5writeEPKhj
-                0x0000000008004ddc       0x48 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
-                0x0000000008004ddc                USBSerial::write(unsigned char const*, unsigned int)
+                0x0000000008004dac       0x48 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
+                0x0000000008004dac                USBSerial::write(unsigned char const*, unsigned int)
  .text._ZN9USBSerial9availableEv
-                0x0000000008004e24        0xc /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
-                0x0000000008004e24                USBSerial::available()
+                0x0000000008004df4        0xc /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
+                0x0000000008004df4                USBSerial::available()
  .text._ZN9USBSerial4readEv
-                0x0000000008004e30       0x18 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
-                0x0000000008004e30                USBSerial::read()
+                0x0000000008004e00       0x18 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
+                0x0000000008004e00                USBSerial::read()
  .text._ZN9USBSerial9readBytesEPcj
-                0x0000000008004e48       0x4c /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
-                0x0000000008004e48                USBSerial::readBytes(char*, unsigned int)
+                0x0000000008004e18       0x4c /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
+                0x0000000008004e18                USBSerial::readBytes(char*, unsigned int)
  .text._ZN9USBSerial14readBytesUntilEcPcj
-                0x0000000008004e94       0x68 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
-                0x0000000008004e94                USBSerial::readBytesUntil(char, char*, unsigned int)
+                0x0000000008004e64       0x68 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
+                0x0000000008004e64                USBSerial::readBytesUntil(char, char*, unsigned int)
  .text._ZN9USBSerial4peekEv
-                0x0000000008004efc        0xc /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
-                0x0000000008004efc                USBSerial::peek()
+                0x0000000008004ecc        0xc /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
+                0x0000000008004ecc                USBSerial::peek()
  .text._ZN9USBSerial5flushEv
-                0x0000000008004f08       0x14 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
-                0x0000000008004f08                USBSerial::flush()
+                0x0000000008004ed8       0x14 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
+                0x0000000008004ed8                USBSerial::flush()
  .text.startup._GLOBAL__sub_I_SerialUSB
-                0x0000000008004f1c       0x1c /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
+                0x0000000008004eec       0x1c /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
  .text.__libc_init_array
-                0x0000000008004f38       0x48 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
-                0x0000000008004f38                __libc_init_array
- .text.malloc   0x0000000008004f80       0x10 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-malloc.o)
-                0x0000000008004f80                malloc
- .text.free     0x0000000008004f90       0x10 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-malloc.o)
-                0x0000000008004f90                free
- .text.memcpy   0x0000000008004fa0       0x1c /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memcpy-stub.o)
-                0x0000000008004fa0                memcpy
- .text._free_r  0x0000000008004fbc       0x98 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-nano-freer.o)
-                0x0000000008004fbc                _free_r
+                0x0000000008004f08       0x48 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-init.o)
+                0x0000000008004f08                __libc_init_array
+ .text.malloc   0x0000000008004f50       0x10 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-malloc.o)
+                0x0000000008004f50                malloc
+ .text.free     0x0000000008004f60       0x10 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-malloc.o)
+                0x0000000008004f60                free
+ .text.memcpy   0x0000000008004f70       0x1c /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-memcpy-stub.o)
+                0x0000000008004f70                memcpy
+ .text._free_r  0x0000000008004f8c       0x98 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-nano-freer.o)
+                0x0000000008004f8c                _free_r
  .text.sbrk_aligned
-                0x0000000008005054       0x40 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-nano-mallocr.o)
+                0x0000000008005024       0x40 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-nano-mallocr.o)
  .text._malloc_r
-                0x0000000008005094       0xe8 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-nano-mallocr.o)
-                0x0000000008005094                _malloc_r
- .text._sbrk_r  0x000000000800517c       0x20 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-sbrkr.o)
-                0x000000000800517c                _sbrk_r
+                0x0000000008005064       0xe8 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-nano-mallocr.o)
+                0x0000000008005064                _malloc_r
+ .text._sbrk_r  0x000000000800514c       0x20 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-sbrkr.o)
+                0x000000000800514c                _sbrk_r
  .text.__retarget_lock_acquire_recursive
-                0x000000000800519c        0x2 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-lock.o)
-                0x000000000800519c                __retarget_lock_acquire_recursive
+                0x000000000800516c        0x2 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-lock.o)
+                0x000000000800516c                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x000000000800519e        0x2 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-lock.o)
-                0x000000000800519e                __retarget_lock_release_recursive
+                0x000000000800516e        0x2 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-lock.o)
+                0x000000000800516e                __retarget_lock_release_recursive
  .text.__malloc_lock
-                0x00000000080051a0        0xc /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-mlock.o)
-                0x00000000080051a0                __malloc_lock
+                0x0000000008005170        0xc /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-mlock.o)
+                0x0000000008005170                __malloc_lock
  .text.__malloc_unlock
-                0x00000000080051ac        0xc /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-mlock.o)
-                0x00000000080051ac                __malloc_unlock
- .text.abort    0x00000000080051b8        0xe /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-abort.o)
-                0x00000000080051b8                abort
+                0x000000000800517c        0xc /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-mlock.o)
+                0x000000000800517c                __malloc_unlock
+ .text.abort    0x0000000008005188        0xe /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-abort.o)
+                0x0000000008005188                abort
  .text._raise_r
-                0x00000000080051c6       0x50 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-signal.o)
-                0x00000000080051c6                _raise_r
- *fill*         0x0000000008005216        0x2 
- .text.raise    0x0000000008005218       0x10 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-signal.o)
-                0x0000000008005218                raise
- .text._kill_r  0x0000000008005228       0x24 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-signalr.o)
-                0x0000000008005228                _kill_r
+                0x0000000008005196       0x50 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-signal.o)
+                0x0000000008005196                _raise_r
+ *fill*         0x00000000080051e6        0x2 
+ .text.raise    0x00000000080051e8       0x10 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-signal.o)
+                0x00000000080051e8                raise
+ .text._kill_r  0x00000000080051f8       0x24 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-signalr.o)
+                0x00000000080051f8                _kill_r
  .text._getpid_r
-                0x000000000800524c        0x4 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-signalr.o)
-                0x000000000800524c                _getpid_r
+                0x000000000800521c        0x4 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-signalr.o)
+                0x000000000800521c                _getpid_r
  .text.unlikely._ZSt25__throw_bad_function_callv
-                0x0000000008005250        0x6 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(functional.o)
-                0x0000000008005250                std::__throw_bad_function_call()
+                0x0000000008005220        0x6 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(functional.o)
+                0x0000000008005220                std::__throw_bad_function_call()
  *(.glue_7)
- .glue_7        0x0000000008005256        0x0 linker stubs
+ .glue_7        0x0000000008005226        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0000000008005256        0x0 linker stubs
+ .glue_7t       0x0000000008005226        0x0 linker stubs
  *(.eh_frame)
- *fill*         0x0000000008005256        0x2 
- .eh_frame      0x0000000008005258        0x0 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ *fill*         0x0000000008005226        0x2 
+ .eh_frame      0x0000000008005228        0x0 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x0000000008005258        0x4 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x0000000008005258                _init
- .init          0x000000000800525c        0x8 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x0000000008005228        0x4 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x0000000008005228                _init
+ .init          0x000000000800522c        0x8 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x0000000008005264        0x4 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x0000000008005264                _fini
- .fini          0x0000000008005268        0x8 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
-                0x0000000008005270                . = ALIGN (0x4)
-                0x0000000008005270                _etext = .
+ .fini          0x0000000008005234        0x4 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x0000000008005234                _fini
+ .fini          0x0000000008005238        0x8 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x0000000008005240                . = ALIGN (0x4)
+                0x0000000008005240                _etext = .
 
-.vfp11_veneer   0x0000000008005270        0x0
- .vfp11_veneer  0x0000000008005270        0x0 linker stubs
+.vfp11_veneer   0x0000000008005240        0x0
+ .vfp11_veneer  0x0000000008005240        0x0 linker stubs
 
-.v4_bx          0x0000000008005270        0x0
- .v4_bx         0x0000000008005270        0x0 linker stubs
+.v4_bx          0x0000000008005240        0x0
+ .v4_bx         0x0000000008005240        0x0 linker stubs
 
-.iplt           0x0000000008005270        0x0
- .iplt          0x0000000008005270        0x0 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x0000000008005240        0x0
+ .iplt          0x0000000008005240        0x0 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x0000000008005270      0x4a8
-                0x0000000008005270                . = ALIGN (0x4)
+.rodata         0x0000000008005240      0x4a8
+                0x0000000008005240                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.pin_map_ll
-                0x0000000008005270       0x40 ./obj/libraries/SrcWrapper/stm32/pinmap.c.o
-                0x0000000008005270                pin_map_ll
+                0x0000000008005240       0x40 ./obj/libraries/SrcWrapper/stm32/pinmap.c.o
+                0x0000000008005240                pin_map_ll
  .rodata.AHBPrescTable
-                0x00000000080052b0       0x10 ./obj/libraries/SrcWrapper/stm32/system_stm32yyxx.c.o
-                0x00000000080052b0                AHBPrescTable
+                0x0000000008005280       0x10 ./obj/libraries/SrcWrapper/stm32/system_stm32yyxx.c.o
+                0x0000000008005280                AHBPrescTable
  .rodata.PinMap_UART_RX
-                0x00000000080052c0       0x48 ./obj/core/PeripheralPins.c.o
-                0x00000000080052c0                PinMap_UART_RX
+                0x0000000008005290       0x48 ./obj/core/PeripheralPins.c.o
+                0x0000000008005290                PinMap_UART_RX
  .rodata.PinMap_UART_TX
-                0x0000000008005308       0x48 ./obj/core/PeripheralPins.c.o
-                0x0000000008005308                PinMap_UART_TX
+                0x00000000080052d8       0x48 ./obj/core/PeripheralPins.c.o
+                0x00000000080052d8                PinMap_UART_TX
  .rodata.PinMap_USB_OTG_FS
-                0x0000000008005350       0x48 ./obj/core/PeripheralPins.c.o
-                0x0000000008005350                PinMap_USB_OTG_FS
+                0x0000000008005320       0x48 ./obj/core/PeripheralPins.c.o
+                0x0000000008005320                PinMap_USB_OTG_FS
  .rodata.analogInputPin
-                0x0000000008005398       0x28 ./obj/core/variant_generic.cpp.o
-                0x0000000008005398                analogInputPin
+                0x0000000008005368       0x28 ./obj/core/variant_generic.cpp.o
+                0x0000000008005368                analogInputPin
  .rodata.digitalPin
-                0x00000000080053c0       0x90 ./obj/core/variant_generic.cpp.o
-                0x00000000080053c0                digitalPin
+                0x0000000008005390       0x90 ./obj/core/variant_generic.cpp.o
+                0x0000000008005390                digitalPin
  .rodata..L__unnamed_2
-                0x0000000008005450        0xa ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
- *fill*         0x000000000800545a        0x2 
+                0x0000000008005420        0xa ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
+ *fill*         0x000000000800542a        0x2 
  .rodata..L__unnamed_1
-                0x000000000800545c       0x10 ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
- *fill*         0x000000000800546c        0x4 
- .rodata.str.0  0x0000000008005470       0x1c ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
+                0x000000000800542c       0x10 ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
+ *fill*         0x000000000800543c        0x4 
+ .rodata.str.0  0x0000000008005440       0x1c ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
  .rodata..Lanon.65041ed55599e7132a9e5e5034b08ed2.2
-                0x000000000800548c        0x0 ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
+                0x000000000800545c        0x0 ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
  .rodata..Lanon.65041ed55599e7132a9e5e5034b08ed2.230
-                0x000000000800548c       0x10 ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
+                0x000000000800545c       0x10 ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
  .rodata..L__unnamed_4
-                0x000000000800549c       0x32 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.0.rcgu.o)
- *fill*         0x00000000080054ce        0x2 
+                0x000000000800546c       0x32 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.0.rcgu.o)
+ *fill*         0x000000000800549e        0x2 
  .rodata..L__unnamed_1
-                0x00000000080054d0        0x8 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.0.rcgu.o)
+                0x00000000080054a0        0x8 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.0.rcgu.o)
  .rodata..L__unnamed_2
-                0x00000000080054d8        0x0 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.0.rcgu.o)
+                0x00000000080054a8        0x0 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.0.rcgu.o)
  .rodata..L__unnamed_5
-                0x00000000080054d8       0x4f ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.0.rcgu.o)
- *fill*         0x0000000008005527        0x1 
+                0x00000000080054a8       0x4f ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.0.rcgu.o)
+ *fill*         0x00000000080054f7        0x1 
  .rodata..L__unnamed_3
-                0x0000000008005528       0x10 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.0.rcgu.o)
+                0x00000000080054f8       0x10 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.0.rcgu.o)
  .rodata..L__unnamed_4
-                0x0000000008005538        0xc ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.2.rcgu.o)
+                0x0000000008005508        0xc ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.2.rcgu.o)
  .rodata..L__unnamed_1
-                0x0000000008005544        0x8 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.2.rcgu.o)
+                0x0000000008005514        0x8 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.2.rcgu.o)
  .rodata..L__unnamed_2
-                0x000000000800554c        0x0 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.2.rcgu.o)
+                0x000000000800551c        0x0 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.2.rcgu.o)
  .rodata..L__unnamed_5
-                0x000000000800554c       0x4b ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.2.rcgu.o)
- *fill*         0x0000000008005597        0x1 
+                0x000000000800551c       0x4b ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.2.rcgu.o)
+ *fill*         0x0000000008005567        0x1 
  .rodata..L__unnamed_3
-                0x0000000008005598       0x10 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.2.rcgu.o)
+                0x0000000008005568       0x10 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.2.rcgu.o)
  .rodata.USBD_ManufacturerStrDescriptor.str1.1
-                0x00000000080055a8       0x13 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_desc.c.o)
+                0x0000000008005578       0x13 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_desc.c.o)
  .rodata.USBD_Class_ProductStrDescriptor.str1.1
-                0x00000000080055bb       0x40 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_desc.c.o)
+                0x000000000800558b       0x40 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_desc.c.o)
  .rodata.USBD_Class_ConfigStrDescriptor.str1.1
-                0x00000000080055fb       0x1c /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_desc.c.o)
+                0x00000000080055cb       0x1c /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_desc.c.o)
  .rodata.USBD_Class_InterfaceStrDescriptor.str1.1
-                0x0000000008005617       0x1f /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_desc.c.o)
- *fill*         0x0000000008005636        0x2 
+                0x00000000080055e7       0x1f /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_desc.c.o)
+ *fill*         0x0000000008005606        0x2 
  .rodata.ep_def
-                0x0000000008005638       0x28 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_ep_conf.c.o)
-                0x0000000008005638                ep_def
+                0x0000000008005608       0x28 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_ep_conf.c.o)
+                0x0000000008005608                ep_def
  .rodata._ZTV14HardwareSerial
-                0x0000000008005660       0x2c /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
-                0x0000000008005660                vtable for HardwareSerial
+                0x0000000008005630       0x2c /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
+                0x0000000008005630                vtable for HardwareSerial
  .rodata._ZTV9USBSerial
-                0x000000000800568c       0x2c /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
-                0x000000000800568c                vtable for USBSerial
+                0x000000000800565c       0x2c /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
+                0x000000000800565c                vtable for USBSerial
  .rodata.__sf_fake_stderr
-                0x00000000080056b8       0x20 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-findfp.o)
-                0x00000000080056b8                __sf_fake_stderr
+                0x0000000008005688       0x20 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-findfp.o)
+                0x0000000008005688                __sf_fake_stderr
  .rodata.__sf_fake_stdin
-                0x00000000080056d8       0x20 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-findfp.o)
-                0x00000000080056d8                __sf_fake_stdin
+                0x00000000080056a8       0x20 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-findfp.o)
+                0x00000000080056a8                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x00000000080056f8       0x20 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-findfp.o)
-                0x00000000080056f8                __sf_fake_stdout
-                0x0000000008005718                . = ALIGN (0x4)
+                0x00000000080056c8       0x20 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-findfp.o)
+                0x00000000080056c8                __sf_fake_stdout
+                0x00000000080056e8                . = ALIGN (0x4)
 
-.ARM.extab      0x0000000008005718        0x0
-                0x0000000008005718                . = ALIGN (0x4)
+.ARM.extab      0x00000000080056e8        0x0
+                0x00000000080056e8                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000008005718                . = ALIGN (0x4)
+                0x00000000080056e8                . = ALIGN (0x4)
 
-.ARM            0x0000000008005718        0x8
-                0x0000000008005718                . = ALIGN (0x4)
-                0x0000000008005718                __exidx_start = .
+.ARM            0x00000000080056e8        0x8
+                0x00000000080056e8                . = ALIGN (0x4)
+                0x00000000080056e8                __exidx_start = .
  *(.ARM.exidx*)
  .ARM.exidx.text.add
-                0x0000000008005718        0x8 ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
+                0x00000000080056e8        0x8 ./libmath.a(math-3435c55d365d1da1.333a1d64b39h44k3.rcgu.o)
  .ARM.exidx.text._ZN4core3ptr102drop_in_place$LT$$RF$core..iter..adapters..copied..Copied$LT$core..slice..iter..Iter$LT$u8$GT$$GT$$GT$17hcb3dcf446120b254E
-                0x0000000008005720        0x0 ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
+                0x00000000080056f0        0x0 ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
                                           0x8 (size before relaxing)
  .ARM.exidx.text._ZN36_$LT$T$u20$as$u20$core..any..Any$GT$7type_id17hbd41cdc6c00f84a9E
-                0x0000000008005720        0x0 ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
+                0x00000000080056f0        0x0 ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
                                           0x8 (size before relaxing)
  .ARM.exidx.text.unlikely._ZN4core9panicking9panic_fmt17h9b81e8a6837d45c0E
-                0x0000000008005720        0x0 ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
+                0x00000000080056f0        0x0 ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
                                           0x8 (size before relaxing)
  .ARM.exidx.text.unlikely._ZN4core9panicking5panic17h30d730ce1100ae73E
-                0x0000000008005720        0x0 ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
+                0x00000000080056f0        0x0 ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
                                           0x8 (size before relaxing)
  .ARM.exidx.text.__aeabi_uldivmod
-                0x0000000008005720        0x0 ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.140.rcgu.o)
+                0x00000000080056f0        0x0 ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.140.rcgu.o)
                                           0x8 (size before relaxing)
  .ARM.exidx.text.memset
-                0x0000000008005720        0x0 ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.5.rcgu.o)
+                0x00000000080056f0        0x0 ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.5.rcgu.o)
                                           0x8 (size before relaxing)
  .ARM.exidx.text.__udivmoddi4
-                0x0000000008005720        0x0 ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.7.rcgu.o)
+                0x00000000080056f0        0x0 ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.7.rcgu.o)
                                           0x8 (size before relaxing)
  .ARM.exidx.text.rust_begin_unwind
-                0x0000000008005720        0x0 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.1.rcgu.o)
+                0x00000000080056f0        0x0 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.1.rcgu.o)
                                           0x8 (size before relaxing)
  .ARM.exidx.text._ZN17compiler_builtins3mem6memset17h3ebec1147b0c5f4cE
-                0x0000000008005720        0x0 ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.100.rcgu.o)
+                0x00000000080056f0        0x0 ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.100.rcgu.o)
                                           0x8 (size before relaxing)
  .ARM.exidx.text._ZN17compiler_builtins3int19specialized_div_rem11u64_div_rem17hc34e21a82d2c3e07E
-                0x0000000008005720        0x0 ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.210.rcgu.o)
+                0x00000000080056f0        0x0 ./libmath.a(compiler_builtins-520d5e7a1fcd3bf8.compiler_builtins.536604cf-cgu.210.rcgu.o)
                                           0x8 (size before relaxing)
  .ARM.exidx.text._ZN4core4sync6atomic14compiler_fence17h88d19e141d2af139E
-                0x0000000008005720        0x0 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.0.rcgu.o)
+                0x00000000080056f0        0x0 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.0.rcgu.o)
                                           0x8 (size before relaxing)
  .ARM.exidx.text._ZN4core3fmt9Arguments6new_v117he5b8c0081bc92651E
-                0x0000000008005720        0x0 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.2.rcgu.o)
+                0x00000000080056f0        0x0 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.2.rcgu.o)
                                           0x8 (size before relaxing)
-                0x0000000008005720                __exidx_end = .
-                0x0000000008005720                . = ALIGN (0x4)
+                0x00000000080056f0                __exidx_end = .
+                0x00000000080056f0                . = ALIGN (0x4)
 
-.rel.dyn        0x0000000008005720        0x0
- .rel.iplt      0x0000000008005720        0x0 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x00000000080056f0        0x0
+ .rel.iplt      0x00000000080056f0        0x0 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.preinit_array  0x0000000008005720        0x0
-                0x0000000008005720                . = ALIGN (0x4)
-                0x0000000008005720                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x00000000080056f0        0x0
+                0x00000000080056f0                . = ALIGN (0x4)
+                0x00000000080056f0                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0000000008005720                PROVIDE (__preinit_array_end = .)
-                0x0000000008005720                . = ALIGN (0x4)
+                0x00000000080056f0                PROVIDE (__preinit_array_end = .)
+                0x00000000080056f0                . = ALIGN (0x4)
 
-.init_array     0x0000000008005720       0x14
-                0x0000000008005720                . = ALIGN (0x4)
-                0x0000000008005720                PROVIDE (__init_array_start = .)
+.init_array     0x00000000080056f0       0x14
+                0x00000000080056f0                . = ALIGN (0x4)
+                0x00000000080056f0                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00101
-                0x0000000008005720        0x4 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(main.cpp.o)
+                0x00000000080056f0        0x4 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(main.cpp.o)
  *(.init_array*)
- .init_array    0x0000000008005724        0x4 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
- .init_array    0x0000000008005728        0x4 ./obj/libraries/SrcWrapper/stm32/interrupt.cpp.o
- .init_array    0x000000000800572c        0x4 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
- .init_array    0x0000000008005730        0x4 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
-                0x0000000008005734                PROVIDE (__init_array_end = .)
-                0x0000000008005734                . = ALIGN (0x4)
+ .init_array    0x00000000080056f4        0x4 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .init_array    0x00000000080056f8        0x4 ./obj/libraries/SrcWrapper/stm32/interrupt.cpp.o
+ .init_array    0x00000000080056fc        0x4 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
+ .init_array    0x0000000008005700        0x4 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
+                0x0000000008005704                PROVIDE (__init_array_end = .)
+                0x0000000008005704                . = ALIGN (0x4)
 
-.fini_array     0x0000000008005734        0x8
-                0x0000000008005734                . = ALIGN (0x4)
+.fini_array     0x0000000008005704        0x8
+                0x0000000008005704                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0000000008005734        0x4 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
- .fini_array    0x0000000008005738        0x4 ./obj/libraries/SrcWrapper/stm32/interrupt.cpp.o
+ .fini_array    0x0000000008005704        0x4 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .fini_array    0x0000000008005708        0x4 ./obj/libraries/SrcWrapper/stm32/interrupt.cpp.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x000000000800573c                . = ALIGN (0x4)
-                0x000000000800573c                _sidata = LOADADDR (.data)
+                0x000000000800570c                . = ALIGN (0x4)
+                0x000000000800570c                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000      0x204 load address 0x000000000800573c
+.data           0x0000000020000000      0x204 load address 0x000000000800570c
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -12268,11 +12268,11 @@ LOAD /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eab
                 0x0000000020000204                . = ALIGN (0x4)
                 0x0000000020000204                _edata = .
 
-.igot.plt       0x0000000020000204        0x0 load address 0x0000000008005940
+.igot.plt       0x0000000020000204        0x0 load address 0x0000000008005910
  .igot.plt      0x0000000020000204        0x0 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 0x0000000020000204                . = ALIGN (0x4)
 
-.bss            0x0000000020000204      0xf0c load address 0x0000000008005940
+.bss            0x0000000020000204      0xdf8 load address 0x0000000008005910
                 0x0000000020000204                _sbss = .
                 0x0000000020000204                __bss_start__ = _sbss
  *(.bss)
@@ -12320,29 +12320,27 @@ LOAD /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eab
  .bss.USBD_StrDesc.0
                 0x0000000020000dc8       0xff /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(usbd_desc.c.o)
  *fill*         0x0000000020000ec7        0x1 
- .bss.Serial1   0x0000000020000ec8      0x114 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
-                0x0000000020000ec8                Serial1
- .bss.Serial2   0x0000000020000fdc      0x114 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
-                0x0000000020000fdc                Serial2
+ .bss.Serial2   0x0000000020000ec8      0x114 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
+                0x0000000020000ec8                Serial2
  .bss.SerialUSB
-                0x00000000200010f0       0x10 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
-                0x00000000200010f0                SerialUSB
+                0x0000000020000fdc       0x10 /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
+                0x0000000020000fdc                SerialUSB
  .bss.__malloc_free_list
-                0x0000000020001100        0x4 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-nano-mallocr.o)
-                0x0000000020001100                __malloc_free_list
+                0x0000000020000fec        0x4 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-nano-mallocr.o)
+                0x0000000020000fec                __malloc_free_list
  .bss.__malloc_sbrk_start
-                0x0000000020001104        0x4 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-nano-mallocr.o)
-                0x0000000020001104                __malloc_sbrk_start
- .bss.errno     0x0000000020001108        0x4 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-reent.o)
-                0x0000000020001108                errno
+                0x0000000020000ff0        0x4 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-nano-mallocr.o)
+                0x0000000020000ff0                __malloc_sbrk_start
+ .bss.errno     0x0000000020000ff4        0x4 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-reent.o)
+                0x0000000020000ff4                errno
  .bss.__lock___malloc_recursive_mutex
-                0x000000002000110c        0x1 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-lock.o)
-                0x000000002000110c                __lock___malloc_recursive_mutex
+                0x0000000020000ff8        0x1 /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(lib_a-lock.o)
+                0x0000000020000ff8                __lock___malloc_recursive_mutex
  *(COMMON)
-                0x0000000020001110                . = ALIGN (0x4)
- *fill*         0x000000002000110d        0x3 
-                0x0000000020001110                _ebss = .
-                0x0000000020001110                __bss_end__ = _ebss
+                0x0000000020000ffc                . = ALIGN (0x4)
+ *fill*         0x0000000020000ff9        0x3 
+                0x0000000020000ffc                _ebss = .
+                0x0000000020000ffc                __bss_end__ = _ebss
 LOAD /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crti.o
 LOAD /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 LOAD /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
@@ -12350,24 +12348,25 @@ LOAD /home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eab
                 0x0000000000080000                LD_MAX_SIZE = 0x80000
                 0x0000000000020000                LD_MAX_DATA_SIZE = 0x20000
 
-.noinit         0x0000000020001110        0x0
-                0x0000000020001110                . = ALIGN (0x4)
-                0x0000000020001110                _snoinit = .
+.noinit         0x0000000020000ffc        0x0
+                0x0000000020000ffc                . = ALIGN (0x4)
+                0x0000000020000ffc                _snoinit = .
  *(.noinit)
  *(.noinit*)
-                0x0000000020001110                . = ALIGN (0x4)
-                0x0000000020001110                _enoinit = .
+                0x0000000020000ffc                . = ALIGN (0x4)
+                0x0000000020000ffc                _enoinit = .
 
 ._user_heap_stack
-                0x0000000020001110      0x600
-                0x0000000020001110                . = ALIGN (0x8)
+                0x0000000020000ffc      0x604
+                0x0000000020001000                . = ALIGN (0x8)
+ *fill*         0x0000000020000ffc        0x4 
                 [!provide]                        PROVIDE (end = .)
-                0x0000000020001110                PROVIDE (_end = .)
-                0x0000000020001310                . = (. + _Min_Heap_Size)
- *fill*         0x0000000020001110      0x200 
-                0x0000000020001710                . = (. + _Min_Stack_Size)
- *fill*         0x0000000020001310      0x400 
-                0x0000000020001710                . = ALIGN (0x8)
+                0x0000000020001000                PROVIDE (_end = .)
+                0x0000000020001200                . = (. + _Min_Heap_Size)
+ *fill*         0x0000000020001000      0x200 
+                0x0000000020001600                . = (. + _Min_Stack_Size)
+ *fill*         0x0000000020001200      0x400 
+                0x0000000020001600                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -14468,8 +14467,6 @@ SPI3_IRQHandler                                   /tmp/arduino-core-cache/core_d
 SPI4_IRQHandler                                   /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(startup_stm32yyxx.S.o)
 SPI5_IRQHandler                                   /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(startup_stm32yyxx.S.o)
 SVC_Handler                                       /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(startup_stm32yyxx.S.o)
-Serial1                                           /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
-                                                  /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(WSerial.cpp.o)
 Serial2                                           /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(HardwareSerial.cpp.o)
                                                   /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(WSerial.cpp.o)
 SerialUSB                                         /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
@@ -15990,7 +15987,6 @@ rtsState                                          /tmp/arduino-core-cache/core_d
                                                   /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(USBSerial.cpp.o)
 rust_begin_unwind                                 ./libmath.a(panic_halt-df4d45d6c0e06308.panic_halt.ef0852ef-cgu.1.rcgu.o)
                                                   ./libmath.a(core-d535b8634ff0e210.core.58ae47a2-cgu.0.rcgu.o)
-serialEvent1()                                    /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(WSerial.cpp.o)
 serialEvent2()                                    /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(WSerial.cpp.o)
 serialEventRun()                                  /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(WSerial.cpp.o)
                                                   /tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a(main.cpp.o)
