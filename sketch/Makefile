@@ -4,9 +4,9 @@ FQBN = STMicroelectronics:stm32:GenF4:pnum=GENERIC_F411CEUX,usb=CDCgen
 
 PORT = /dev/ttyACM0
 
-OBJ = $(PWD)/obj
-DFU = $(OBJ)/$(SKETCH).dfu 
-HEX = $(OBJ)/$(SKETCH).ino.hex
+OBJDIR = $(PWD)/obj
+DFU = $(OBJDIR)/$(SKETCH).dfu 
+HEX = $(OBJDIR)/$(SKETCH).ino.hex
 
 all: $(HEX)
 
@@ -14,8 +14,7 @@ $(DFU): $(HEX)
 	./dfuse-pack.py -i $(HEX) $(DFU)
 
 $(HEX): $(SKETCH).ino
-	arduino-cli compile --fqbn $(FQBN) --build-path $(OBJ)
-	rm -f *.bin *.elf
+	arduino-cli compile --fqbn $(FQBN) --build-path $(OBJDIR)
 
 link:
 	/home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/arm-none-eabi-gcc \
