@@ -4,9 +4,14 @@ extern "C"{
 
 void setup(void)
 {
-    auto n = add(3, 4);
+    Serial.begin(115200);
 }
 
 void loop(void)
 {
+    auto n = add(3, 4);
+
+    Serial.println(n);
+
+    delay(500);
 }
