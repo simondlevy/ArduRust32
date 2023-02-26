@@ -17,15 +17,12 @@ all: $(DFU)
 $(DFU): $(HEX)
 	./dfuse-pack.py -i $< $@
 
-
 $(HEX): $(ELF)
 	objcopy -O ihex --set-start 0x8000000 $< $@
 
 
 $(ELF): $(SKETCH).ino
 	arduino-cli compile --fqbn $(FQBN) --build-path $(OBJDIR)
-
-link:
 	/home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/arm-none-eabi-gcc \
 	-mcpu=cortex-m4 \
 	-mfpu=fpv4-sp-d16 \
