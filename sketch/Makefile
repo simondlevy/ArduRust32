@@ -6,14 +6,14 @@ PORT = /dev/ttyACM0
 
 OBJDIR = $(PWD)/obj
 DFU = $(OBJDIR)/$(SKETCH).dfu 
-HEX = $(OBJDIR)/$(SKETCH).ino.hex
+ELF = $(OBJDIR)/$(SKETCH).ino.elf
 
-all: $(HEX)
+all: $(ELF)
 
-$(DFU): $(HEX)
-	./dfuse-pack.py -i $(HEX) $(DFU)
+$(DFU): $(ELF)
+	./dfuse-pack.py -i $(ELF) $(DFU)
 
-$(HEX): $(SKETCH).ino
+$(ELF): $(SKETCH).ino
 	arduino-cli compile --fqbn $(FQBN) --build-path $(OBJDIR)
 
 link:
