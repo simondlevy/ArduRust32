@@ -12,7 +12,11 @@ HEX = $(OBJDIR)/$(SKETCH).ino.hex
 
 ELF = $(OBJDIR)/$(SKETCH).ino.elf
 
-all: $(HEX)
+all: $(DFU)
+
+$(DFU): $(HEX)
+	./dfuse-pack.py -i $< $@
+
 
 $(HEX): $(ELF)
 	objcopy -O ihex --set-start 0x8000000 $< $@
