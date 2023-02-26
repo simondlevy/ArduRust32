@@ -5,13 +5,18 @@ FQBN = STMicroelectronics:stm32:GenF4:pnum=GENERIC_F411CEUX,usb=CDCgen
 PORT = /dev/ttyACM0
 
 OBJDIR = $(PWD)/obj
-DFU = $(OBJDIR)/$(SKETCH).dfu 
+
+DFU = $(OBJDIR)/$(SKETCH).ino.dfu 
+
+HEX = $(OBJDIR)/$(SKETCH).ino.hex 
+
 ELF = $(OBJDIR)/$(SKETCH).ino.elf
 
-all: $(ELF)
+all: $(HEX)
 
-$(DFU): $(ELF)
-	./dfuse-pack.py -i $(ELF) $(DFU)
+$(HEX): $(ELF)
+	objcopy -O ihex --set-start 0x8000000 $< $@
+
 
 $(ELF): $(SKETCH).ino
 	arduino-cli compile --fqbn $(FQBN) --build-path $(OBJDIR)
