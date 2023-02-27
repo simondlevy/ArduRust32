@@ -12,8 +12,7 @@ HEX = $(OBJDIR)/$(SKETCH).ino.hex
 
 ELF = $(OBJDIR)/$(SKETCH).ino.elf
 
-# all: $(DFU)
-all: $(ELF)
+all: $(DFU)
 
 $(DFU): $(HEX)
 	./dfuse-pack.py -i $< $@
@@ -22,7 +21,9 @@ $(HEX): $(ELF)
 	objcopy -O ihex --set-start 0x8000000 $< $@
 
 $(ELF): $(SKETCH).ino
+	rm -rf /tmp/arduino-core-cache/
 	arduino-cli compile --fqbn $(FQBN) --build-path $(OBJDIR)
+	mv /tmp/arduino-core-cache/*.a obj/core.a
 	$(HOME)/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/arm-none-eabi-gcc \
 	-mcpu=cortex-m4 \
 	-mfpu=fpv4-sp-d16 \
@@ -222,7 +223,7 @@ $(ELF): $(SKETCH).ino
 	./obj/core/variant_THUNDERPACK_F411.cpp.o \
 	./obj/core/variant_generic.cpp.o \
 	./libmath.a \
-	/tmp/arduino-core-cache/core_dcd3d35c0b02722d162ef805bd000fab.a \
+	./obj/core.a \
 	-lc -Wl,--end-group -lm -lgcc -lstdc++
 
 unbrick: $(DFU)
