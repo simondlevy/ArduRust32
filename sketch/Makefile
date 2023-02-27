@@ -12,7 +12,8 @@ HEX = $(OBJDIR)/$(SKETCH).ino.hex
 
 ELF = $(OBJDIR)/$(SKETCH).ino.elf
 
-all: $(DFU)
+# all: $(DFU)
+all: $(ELF)
 
 $(DFU): $(HEX)
 	./dfuse-pack.py -i $< $@
@@ -20,10 +21,9 @@ $(DFU): $(HEX)
 $(HEX): $(ELF)
 	objcopy -O ihex --set-start 0x8000000 $< $@
 
-
 $(ELF): $(SKETCH).ino
 	arduino-cli compile --fqbn $(FQBN) --build-path $(OBJDIR)
-	/home/levys/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/arm-none-eabi-gcc \
+	$(HOME)/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/arm-none-eabi-gcc \
 	-mcpu=cortex-m4 \
 	-mfpu=fpv4-sp-d16 \
 	-mfloat-abi=hard \
@@ -40,9 +40,9 @@ $(ELF): $(SKETCH).ino
 	-Wl,--entry=Reset_Handler \
 	-Wl,--unresolved-symbols=report-all \
 	-Wl,--warn-common \
-	-Wl,--default-script=/home/levys/.arduino15/packages/STMicroelectronics/hardware/stm32/2.3.0/variants/STM32F4xx/F411C\(C-E\)\(U-Y\)/ldscript.ld \
-	-Wl,--script=/home/levys/.arduino15/packages/STMicroelectronics/hardware/stm32/2.3.0/system/ldscript.ld \
-	-Wl,-Map,./obj/sketch.ino.map -L/home/levys/.arduino15/packages/STMicroelectronics/tools/CMSIS/5.7.0/CMSIS/DSP/Lib/GCC/ -larm_cortexM4lf_math -o ./obj/sketch.ino.elf -L./obj \
+	-Wl,--default-script=$(HOME)/.arduino15/packages/STMicroelectronics/hardware/stm32/2.3.0/variants/STM32F4xx/F411C\(C-E\)\(U-Y\)/ldscript.ld \
+	-Wl,--script=$(HOME)/.arduino15/packages/STMicroelectronics/hardware/stm32/2.3.0/system/ldscript.ld \
+	-Wl,-Map,./obj/sketch.ino.map -L$(HOME)/.arduino15/packages/STMicroelectronics/tools/CMSIS/5.7.0/CMSIS/DSP/Lib/GCC/ -larm_cortexM4lf_math -o ./obj/sketch.ino.elf -L./obj \
 	-Wl,--start-group \
 	./obj/sketch/SrcWrapper.cpp.o \
 	./obj/sketch/sketch.ino.cpp.o \
