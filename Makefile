@@ -34,7 +34,7 @@ $(RUSTLIB): src/lib.rs
 
 $(ELF): $(PROJECT).ino $(RUSTLIB)
 	rm -rf /tmp/arduino-core-cache/
-	arduino-cli compile --fqbn $(FQBN) --build-path $(OBJDIR)
+	- arduino-cli compile --fqbn $(FQBN) --build-path $(OBJDIR)
 	mv /tmp/arduino-core-cache/*.a obj/core.a
 	$(HOME)/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/arm-none-eabi-gcc \
 	-mcpu=cortex-m4 \

@@ -32,10 +32,7 @@ together, and then reports the resulting sum in a loop.
 
 ## Building the example
 
-To build the example you should enter the command
-```
-  make -i
-```
+To build the example you should simply enter the command ```make```.
 
 
 
