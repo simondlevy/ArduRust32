@@ -58,4 +58,8 @@ command with a hyphen tells the Makefile to continue to the next step.
 3. Links the Arduino and Rust object code and libraries with an explicit call to the
 <b>arm-none-eabi-gcc compiler</b>.
 
+## Limitations / Future work
 
+The current example use a [pure function](https://en.wikipedia.org/wiki/Pure_function) (no side effects)  and
+passes and returns a simple datatype (integer).  Current work on this project involves supporting side effects
+in the Rust code and passing and returning structured datatypes like tuples.
