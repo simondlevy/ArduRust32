@@ -55,8 +55,8 @@ object files and library for the Arduino code.  This command will fail to comple
 of the missing object code for the Rust function, but prefacing the ```arduino-cli```
 command with a hyphen tells the Makefile to continue to the next step.
 
-3. Links the Arduino and Rust object code and libraries with an explicit call to the
-<b>arm-none-eabi-gcc compiler</b>.
+3. Links the Arduino and Rust object code and libraries with an explicit call to
+<b>arm-none-eabi-gcc</b>.
 
 ## Limitations / Future work
 
