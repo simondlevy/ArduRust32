@@ -44,7 +44,7 @@ Then simply run the command
 board, put the board into bootloader mode (typically by [connecting two
 pins](https://cdn-learn.adafruit.com/assets/assets/000/083/645/medium800/feather_boards_image.png?1572999908)
 or pressing a [boot
-button](https://cdn-shop.adafruit.com/970x728/4877-00.jpg)) before plugging in, and type ```make
+button](https://cdn-shop.adafruit.com/970x728/4877-00.jpg) before plugging in), and type ```make
 upload```.  You can then type ```make listen``` (or use the Arduino serial
 monitor) to see a sequence of 7s resulting from the addition of 3 and 4 in the
 Rust code.
