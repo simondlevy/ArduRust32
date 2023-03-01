@@ -7,12 +7,12 @@ microcontrollers](https://github.com/stm32duino) but wanted to expand my skill
 set to the awesome Rust programming language.  Having looked into [Embedded
 Rust](https://docs.rust-embedded.org/book/), I concluded that the  level of
 Rust knowledge required was beyond my current ability to understand and modify.
-To keep the best of both worlds &ndash; the simplicity of the Arduino approach
-and the safety of Rust &ndash; I came up with this minimal example of how you
-can call Rust code from an Arduino sketch on an STM32 microcontroller.  
 (Also, because much of the Rust code required to replace the Arduino code for peripherals,
 serial comms and the like must declared ```unsafe```,  I couldn't see a big advantage
-to giving up the convenience of Arduino to move entirely to Rust.)
+to giving up the convenience of Arduino to move entirely to Rust.) To keep the
+best of both worlds &ndash; the simplicity of the Arduino approach and the
+safety of Rust &ndash; I came up with this minimal example of how you
+can call Rust code from an Arduino sketch on an STM32 microcontroller.  
 
 ## Example 
 
