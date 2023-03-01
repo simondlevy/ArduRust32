@@ -30,6 +30,13 @@ together, and then reports the resulting sum in a loop.
 
 * [Arduino CLI](https://arduino.github.io/arduino-cli/0.31/installation/)
 
+## Building the example
+
+To build the example you should enter the command
+```
+  make -i
+```
+
 
 
 
