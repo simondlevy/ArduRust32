@@ -62,6 +62,6 @@ command with a hyphen tells the Makefile to continue to the next step.
 
 ## Limitations / Future work
 
-The current example use a [pure function](https://en.wikipedia.org/wiki/Pure_function) (no side effects)  and
+The current example uses a [pure function](https://en.wikipedia.org/wiki/Pure_function) (no side effects)  and
 passes and returns a simple datatype (integer).  Current work on this project involves supporting side effects
 in the Rust code and passing and returning structured datatypes like tuples.
