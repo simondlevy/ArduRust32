@@ -5,21 +5,27 @@
 # MIT License
 
 
-###########################################
-# Choose one of the following pairs:
-#PNUM = GENERIC_F411CEUX
-#VARIANT = STM32F4xx/F411C\(C-E\)\(U-Y\)
+#####################################################
+# Choose one of the following triples for your board:
+GEN = F4
+PNUM = GENERIC_F411CEUX
+VARIANT = STM32F4xx/F411C\(C-E\)\(U-Y\)
 
-PNUM = GENERIC_F405RGTX
-VARIANT = STM32F4xx/F405RGT_F415RGT
-############################################
+#GEN = F4
+#PNUM = GENERIC_F405RGTX
+#VARIANT = STM32F4xx/F405RGT_F415RGT
+
+#GEN = F7
+#PNUM = GENERIC_F722RETX
+#VARIANT = STM32F7xx/F722R\(C-E\)T_F730R8T_F732RET
+#####################################################
 	
 
 PROJECT = ArduRust32
 
 RUSTLIB = ./target/thumbv7em-none-eabihf/debug/libmath.a
 
-FQBN = STMicroelectronics:stm32:GenF4:pnum=$(PNUM),usb=CDCgen
+FQBN = STMicroelectronics:stm32:Gen$(GEN):pnum=$(PNUM),usb=CDCgen
 
 PORT = /dev/ttyACM0
 
