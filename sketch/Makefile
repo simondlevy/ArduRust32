@@ -49,20 +49,7 @@ $(ELF): $(SKETCH).ino
 	./obj/libraries/SrcWrapper/*.o \
 	./obj/libraries/SrcWrapper/HAL/*.o \
 	./obj/libraries/SrcWrapper/LL/*.o \
-	./obj/libraries/SrcWrapper/stm32/PortNames.c.o \
-	./obj/libraries/SrcWrapper/stm32/bootloader.c.o \
-	./obj/libraries/SrcWrapper/stm32/clock.c.o \
-	./obj/libraries/SrcWrapper/stm32/core_callback.c.o \
-	./obj/libraries/SrcWrapper/stm32/dwt.c.o \
-	./obj/libraries/SrcWrapper/stm32/hw_config.c.o \
-	./obj/libraries/SrcWrapper/stm32/otp.c.o \
-	./obj/libraries/SrcWrapper/stm32/pinmap.c.o \
-	./obj/libraries/SrcWrapper/stm32/stm32_def.c.o \
-	./obj/libraries/SrcWrapper/stm32/system_stm32yyxx.c.o \
-	./obj/libraries/SrcWrapper/stm32/timer.c.o \
-	./obj/libraries/SrcWrapper/stm32/uart.c.o \
-	./obj/libraries/SrcWrapper/stm32/analog.cpp.o \
-	./obj/libraries/SrcWrapper/stm32/interrupt.cpp.o \
+	./obj/libraries/SrcWrapper/stm32/*.o \
 	./obj/core/PeripheralPins.c.o \
 	./obj/core/PeripheralPins_BLACKPILL_F411CE.c.o \
 	./obj/core/PeripheralPins_THUNDERPACK_F411.c.o \
