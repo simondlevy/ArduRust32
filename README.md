@@ -44,8 +44,9 @@ Arduino serial monitor) to see a sequence of 7s resulting from the addition of 3
 
 ## How it works
 
-The main obstacle to calling Rust code from Arduino is linking the compiled Arduino and Ruscode together into a single ELF binary.  To overcome this problem, the Makefile does
-the following:
+The main obstacle to calling Rust code from Arduino is linking the compiled
+Arduino and Rust code together into a single ELF binary.  To overcome this
+problem, the Makefile does the following:
 
 1. Compiles the Rust code into a static library <b>libmath.a</b> via ```cargo build```
 
