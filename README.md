@@ -13,7 +13,7 @@ can call Rust code from an Arduino sketch on an STM32 microcontroller.
 
 ## Example 
 
-The very simple example I am using is adapted from Amir Shresths's
+The very simple example I am using is adapted from Amir Shrestha's
 [blog post](https://amirkoblog.wordpress.com/2018/07/05/calling-rust-code-from-c-c/).
 In this example, your Arduino (C++) code calls a Rust function to add two integers
 together, and then reports the resulting sum in a loop.
