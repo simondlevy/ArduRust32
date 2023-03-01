@@ -23,9 +23,8 @@ together, and then reports the resulting sum in a loop.
 
 ## Requirements
 
-* An STM32Fxx microcontroller.  (The [Adafruit STM32F411 "Black
-Pill"](https://www.adafruit.com/product/4877) development board is a great way to get
-started!)
+* An STM32Fxx microcontroller.  (The [STM32F411 "Black Pill"](https://www.adafruit.com/product/4877)
+development board is a great way to get started!)
 
 * Linux OS
 
