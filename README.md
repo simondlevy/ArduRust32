@@ -1,4 +1,4 @@
-<img src="logo.png">
+<img src="logo2.png">
 
 ## Motivation
 
