@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2023 Simon D. Levy
+ *
+ * MIT License
+ */
 #![no_std]
 
 use panic_halt as _; 

@@ -1,3 +1,10 @@
+# Makfile for ArduRust32 example
+#
+# Copyright (c) 2023 Simon D. Levy
+#
+# MIT License
+
+
 PROJECT = ArduRust
 
 RUSTLIB = ./target/thumbv7em-none-eabihf/debug/libmath.a
@@ -60,13 +67,8 @@ $(ELF): $(PROJECT).ino $(RUSTLIB)
 	./obj/core.a \
 	-lc -Wl,--end-group -lm -lgcc -lstdc++
 
-unbrick: $(DFU)
+upload: $(DFU)
 	dfu-util -a 0 -D $(DFU) -s :leave	
-
-flash: $(DFU)
-	echo -n 'R' > $(PORT)
-	sleep 1
-	dfu-util -a 0 -D $(DFU) -s :leave
 
 clean:
 	cargo clean

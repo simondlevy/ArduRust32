@@ -24,6 +24,8 @@ together, and then reports the resulting sum in a loop.
 
 * Linux OS
 
+* [Rust](https://www.rust-lang.org/tools/install)
+
 * [Arduino\_Core\_STM32](https://github.com/stm32duino/Arduino_Core_STM32)
 
 * [Arduino CLI](https://arduino.github.io/arduino-cli/0.31/installation/)

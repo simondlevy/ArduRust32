@@ -1,3 +1,11 @@
+/*
+ * Simple Arduino sketch showing how to call a rust function from C++
+ *
+ * Copyright (c) 2023 Simon D. Levy
+ *
+ * MIT License
+ */
+
 extern "C"{
     int add(int first, int second);
 }

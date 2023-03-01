@@ -1,3 +1,7 @@
+# Copyright (c) 2023 Simon D. LEvy
+#
+# MIT License
+
 [package]
 authors = ["Simon D. Levy"]
 edition = "2018"
