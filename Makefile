@@ -8,3 +8,4 @@ $(TARGET): src/lib.rs
 
 clean:
 	cargo clean
+	rm -f sketch/libmath.a
