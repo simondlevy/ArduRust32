@@ -5,11 +5,14 @@
 # MIT License
 
 
+PNUM = GENERIC_F411CEUX
+VARIANT = STM32F4xx/F411C\(C-E\)\(U-Y\)
+
 PROJECT = ArduRust32
 
 RUSTLIB = ./target/thumbv7em-none-eabihf/debug/libmath.a
 
-FQBN = STMicroelectronics:stm32:GenF4:pnum=GENERIC_F411CEUX,usb=CDCgen
+FQBN = STMicroelectronics:stm32:GenF4:pnum=$(PNUM),usb=CDCgen
 
 PORT = /dev/ttyACM0
 
@@ -53,7 +56,7 @@ $(ELF): $(PROJECT).ino $(RUSTLIB)
 	-Wl,--entry=Reset_Handler \
 	-Wl,--unresolved-symbols=report-all \
 	-Wl,--warn-common \
-	-Wl,--default-script=$(HOME)/.arduino15/packages/STMicroelectronics/hardware/stm32/2.3.0/variants/STM32F4xx/F411C\(C-E\)\(U-Y\)/ldscript.ld \
+	-Wl,--default-script=$(HOME)/.arduino15/packages/STMicroelectronics/hardware/stm32/2.3.0/variants/$(VARIANT)/ldscript.ld \
 	-Wl,--script=$(HOME)/.arduino15/packages/STMicroelectronics/hardware/stm32/2.3.0/system/ldscript.ld \
 	-Wl,-Map,./obj/$(PROJECT).ino.map -L$(HOME)/.arduino15/packages/STMicroelectronics/tools/CMSIS/5.7.0/CMSIS/DSP/Lib/GCC/ -larm_cortexM4lf_math -o ./obj/$(PROJECT).ino.elf -L./obj \
 	-Wl,--start-group \
