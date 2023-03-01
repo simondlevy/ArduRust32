@@ -56,6 +56,6 @@ of the missing object code for the Rust function, but prefacing the ```arduino-c
 command with a hyphen tells the Makefile to continue to the next step.
 
 3. Links the Arduino and Rust object code and libraries with an explicit call to the
-arm-none-eabi-gcc compiler.
+<b>arm-none-eabi-gcc compiler</b>.
 
 
