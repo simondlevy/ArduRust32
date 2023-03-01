@@ -50,13 +50,7 @@ $(ELF): $(SKETCH).ino
 	./obj/libraries/SrcWrapper/HAL/*.o \
 	./obj/libraries/SrcWrapper/LL/*.o \
 	./obj/libraries/SrcWrapper/stm32/*.o \
-	./obj/core/PeripheralPins.c.o \
-	./obj/core/PeripheralPins_BLACKPILL_F411CE.c.o \
-	./obj/core/PeripheralPins_THUNDERPACK_F411.c.o \
-	./obj/core/generic_clock.c.o \
-	./obj/core/variant_BLACKPILL_F411CE.cpp.o \
-	./obj/core/variant_THUNDERPACK_F411.cpp.o \
-	./obj/core/variant_generic.cpp.o \
+	./obj/core/*.o \
 	./libmath.a \
 	./obj/core.a \
 	-lc -Wl,--end-group -lm -lgcc -lstdc++
