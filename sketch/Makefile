@@ -45,8 +45,7 @@ $(ELF): $(SKETCH).ino
 	-Wl,--script=$(HOME)/.arduino15/packages/STMicroelectronics/hardware/stm32/2.3.0/system/ldscript.ld \
 	-Wl,-Map,./obj/sketch.ino.map -L$(HOME)/.arduino15/packages/STMicroelectronics/tools/CMSIS/5.7.0/CMSIS/DSP/Lib/GCC/ -larm_cortexM4lf_math -o ./obj/sketch.ino.elf -L./obj \
 	-Wl,--start-group \
-	./obj/sketch/SrcWrapper.cpp.o \
-	./obj/sketch/sketch.ino.cpp.o \
+	./obj/sketch/*.o \
 	./obj/libraries/SrcWrapper/syscalls.c.o \
 	./obj/libraries/SrcWrapper/HardwareTimer.cpp.o \
 	./obj/libraries/SrcWrapper/new.cpp.o \
