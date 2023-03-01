@@ -10,6 +10,9 @@ Rust knowledge required was beyond my current ability to understand and modify.
 To keep the best of both worlds &ndash; the simplicity of the Arduino approach
 and the safety of Rust &ndash; I came up with this minimal example of how you
 can call Rust code from an Arduino sketch on an STM32 microcontroller.  
+(Also, because much of the Rust code required to replace the Arduino code for peripherals,
+serial comms and the like must declared ```unsafe```,  I couldn't see a big advantage
+to giving up the convenience of Arduino to move entirely to Rust.)
 
 ## Example 
 
@@ -30,9 +33,15 @@ together, and then reports the resulting sum in a loop.
 
 * [Arduino CLI](https://arduino.github.io/arduino-cli/0.31/installation/)
 
-## Building the example
+## Building and running the example
 
-To build the example you should simply enter the command ```make```.
+To build the example you should simply enter the command ```make```.  To
+upload (flash) the resulting sketch onto your microcontroller board, put the
+board into bootloader mode (typically by
+[connecting two pins](https://learn.adafruit.com/adafruit-stm32f405-feather-express/dfu-bootloader-details)
+or pressing a boot button), and type ```make upload```.  You can then type ```make listen``` (or use the
+Arduino serial monitor) to see a sequence of 7s resulting from the addition of 3 and 4 in the Rust code.
+
 
 
 
