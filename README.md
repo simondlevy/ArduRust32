@@ -42,8 +42,19 @@ board into bootloader mode (typically by
 or pressing a boot button), and type ```make upload```.  You can then type ```make listen``` (or use the
 Arduino serial monitor) to see a sequence of 7s resulting from the addition of 3 and 4 in the Rust code.
 
+## How it works
 
+The main obstacle to calling Rust code from Arduino is linking the compiled Arduino and Ruscode together into a single ELF binary.  To overcome this problem, the Makefile does
+the following:
 
+1. Compiles the Rust code into a static library <b>libmath.a</b> via ```cargo build```
 
+2. Compiles the Arduino sketch using ```arduino-cli compile```, which builds the
+object files and library for the Arduino code.  This command will fail to complete because
+of the missing object code for the Rust function, but prefacing the ```arduino-cli```
+command with a hyphen tells the Makefile to continue to the next step.
+
+3. Links the Arduino and Rust object code and libraries with an explicit call to the
+arm-none-eabi-gcc compiler.
 
 
