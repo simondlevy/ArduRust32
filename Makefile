@@ -14,7 +14,7 @@ HEX = $(OBJDIR)/$(PROJECT).ino.hex
 
 ELF = $(OBJDIR)/$(PROJECT).ino.elf
 
-all: $(ELF)
+all: $(DFU)
 
 $(DFU): $(HEX)
 	./dfuse-pack.py -i $< $@
