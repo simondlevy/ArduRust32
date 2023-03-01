@@ -5,8 +5,15 @@
 # MIT License
 
 
-PNUM = GENERIC_F411CEUX
-VARIANT = STM32F4xx/F411C\(C-E\)\(U-Y\)
+###########################################
+# Choose one of the following pairs:
+#PNUM = GENERIC_F411CEUX
+#VARIANT = STM32F4xx/F411C\(C-E\)\(U-Y\)
+
+PNUM = GENERIC_F405RGTX
+VARIANT = STM32F4xx/F405RGT_F415RGT
+############################################
+	
 
 PROJECT = ArduRust32
 
