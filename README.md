@@ -2,7 +2,7 @@
 
 ## Motivation
 
-I love writing [Arduino code STM32
+I love writing [Arduino code for STM32
 microcontrollers](https://github.com/stm32duino) but wanted to expand my skill
 set to the awesome Rust programming language.  Having looked into [Embedded
 Rust](https://docs.rust-embedded.org/book/), I concluded that the  level of
