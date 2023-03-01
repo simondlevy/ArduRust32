@@ -5,7 +5,7 @@
 # MIT License
 
 
-PROJECT = ArduRust
+PROJECT = ArduRust32
 
 RUSTLIB = ./target/thumbv7em-none-eabihf/debug/libmath.a
 
