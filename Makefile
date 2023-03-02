@@ -25,8 +25,6 @@ PROJECT = ArduRust32
 
 RUSTLIB = ./target/thumbv7em-none-eabihf/debug/libmath.a
 
-FQBN = STMicroelectronics:stm32:Gen$(GEN):pnum=$(PNUM),usb=CDCgen
-
 PORT = /dev/ttyACM0
 
 OBJDIR = ./obj
@@ -50,7 +48,7 @@ $(RUSTLIB): src/lib.rs
 
 $(ELF): $(PROJECT).ino $(RUSTLIB)
 	rm -rf /tmp/arduino-core-cache/
-	- arduino-cli compile --fqbn $(FQBN) --build-path $(OBJDIR)
+	- arduino-cli compile --fqbn STMicroelectronics:stm32:Gen$(GEN):pnum=$(PNUM),usb=CDCgen --build-path $(OBJDIR)
 	mv /tmp/arduino-core-cache/*.a obj/core.a
 	$(HOME)/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/arm-none-eabi-gcc \
 	-mcpu=cortex-m4 \
