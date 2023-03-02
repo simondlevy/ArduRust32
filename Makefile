@@ -69,7 +69,10 @@ $(ELF): $(PROJECT).ino $(RUSTLIB)
 	-Wl,--warn-common \
 	-Wl,--default-script=$(HOME)/.arduino15/packages/STMicroelectronics/hardware/stm32/2.3.0/variants/$(VARIANT)/ldscript.ld \
 	-Wl,--script=$(HOME)/.arduino15/packages/STMicroelectronics/hardware/stm32/2.3.0/system/ldscript.ld \
-	-Wl,-Map,./obj/$(PROJECT).ino.map -L$(HOME)/.arduino15/packages/STMicroelectronics/tools/CMSIS/5.7.0/CMSIS/DSP/Lib/GCC/ -larm_cortexM4lf_math -o ./obj/$(PROJECT).ino.elf -L./obj \
+	-Wl,-Map,./obj/$(PROJECT).ino.map \
+	-L$(HOME)/.arduino15/packages/STMicroelectronics/tools/CMSIS/5.7.0/CMSIS/DSP/Lib/GCC/ \
+	-larm_cortexM4lf_math \
+	-o ./obj/$(PROJECT).ino.elf -L./obj \
 	-Wl,--start-group \
 	./obj/sketch/*.o \
 	./obj/libraries/SrcWrapper/*.o \
