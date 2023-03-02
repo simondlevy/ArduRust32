@@ -8,7 +8,7 @@ set to the awesome Rust programming language.  Having looked into [Embedded
 Rust](https://docs.rust-embedded.org/book/), I concluded that the  level of
 Rust knowledge required was beyond my current ability to understand and modify.
 (Also, because much of the Rust code required to replace the Arduino code for peripherals,
-serial comms and the like must declared ```unsafe```,  I couldn't see a big advantage
+serial comms and the like must be declared ```unsafe```,  I couldn't see a big advantage
 to giving up the convenience of Arduino to move entirely to Rust.) To keep the
 best of both worlds &ndash; the simplicity of the Arduino approach and the
 safety of Rust &ndash; I came up with this minimal example of how you

@@ -23,7 +23,7 @@ VARIANT = STM32F4xx/F411C\(C-E\)\(U-Y\)
 
 PROJECT = ArduRust32
 
-RUSTLIB = ./target/thumbv7em-none-eabihf/debug/libmath.a
+RUSTLIB = ./target/thumbv7em-none-eabihf/release/libmath.a
 
 PORT = /dev/ttyACM0
 
@@ -44,7 +44,7 @@ $(HEX): $(ELF)
 	objcopy -O ihex --set-start 0x8000000 $< $@
 
 $(RUSTLIB): src/lib.rs
-	cargo build
+	cargo build --release
 
 $(ELF): $(PROJECT).ino $(RUSTLIB)
 	rm -rf /tmp/arduino-core-cache/
