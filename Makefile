@@ -35,6 +35,8 @@ HEX = $(OBJDIR)/$(PROJECT).ino.hex
 
 ELF = $(OBJDIR)/$(PROJECT).ino.elf
 
+TMP = /tmp/arduino/cores/STMicroelectronics_stm32_GenF4_pnum_$(PNUM)
+
 all: $(DFU)
 
 $(DFU): $(HEX)
@@ -47,9 +49,9 @@ $(RUSTLIB): src/lib.rs
 	cargo build --release
 
 $(ELF): $(PROJECT).ino $(RUSTLIB)
-	rm -rf /tmp/arduino-core-cache/
+	rm -rf $(TMP)*
 	- arduino-cli compile --fqbn STMicroelectronics:stm32:Gen$(GEN):pnum=$(PNUM),usb=CDCgen --build-path $(OBJDIR)
-	mv /tmp/arduino-core-cache/*.a obj/core.a
+	mv $(TMP)*/core.a obj/core.a
 	$(HOME)/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/arm-none-eabi-gcc \
 	-mcpu=cortex-m4 \
 	-mfpu=fpv4-sp-d16 \
