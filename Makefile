@@ -37,12 +37,14 @@ ELF = $(OBJDIR)/$(PROJECT).ino.elf
 
 TMP = /tmp/arduino/cores/STMicroelectronics_stm32_GenF4_pnum_$(PNUM)
 
+VER = $(shell ls ~/.arduino15/packages/STMicroelectronics/hardware/stm32)
+
 GCC = $(shell ls ~/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/)
 
 all: $(DFU)
 
 foo:
-	@echo $(GCC)
+	@echo $(VER)
 
 $(DFU): $(HEX)
 	./dfuse-pack.py -i $< $@
@@ -74,8 +76,8 @@ $(ELF): $(PROJECT).ino $(RUSTLIB)
 	-Wl,--entry=Reset_Handler \
 	-Wl,--unresolved-symbols=report-all \
 	-Wl,--warn-common \
-	-Wl,--default-script=$(HOME)/.arduino15/packages/STMicroelectronics/hardware/stm32/2.3.0/variants/$(VARIANT)/ldscript.ld \
-	-Wl,--script=$(HOME)/.arduino15/packages/STMicroelectronics/hardware/stm32/2.3.0/system/ldscript.ld \
+	-Wl,--default-script=$(HOME)/.arduino15/packages/STMicroelectronics/hardware/stm32/$(VER)/variants/$(VARIANT)/ldscript.ld \
+	-Wl,--script=$(HOME)/.arduino15/packages/STMicroelectronics/hardware/stm32/$(VER)/system/ldscript.ld \
 	-Wl,-Map,./obj/$(PROJECT).ino.map \
 	-L$(HOME)/.arduino15/packages/STMicroelectronics/tools/CMSIS/5.7.0/CMSIS/DSP/Lib/GCC/ \
 	-larm_cortexM4lf_math \
