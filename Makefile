@@ -37,7 +37,12 @@ ELF = $(OBJDIR)/$(PROJECT).ino.elf
 
 TMP = /tmp/arduino/cores/STMicroelectronics_stm32_GenF4_pnum_$(PNUM)
 
+GCC = $(shell ls ~/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/)
+
 all: $(DFU)
+
+foo:
+	@echo $(GCC)
 
 $(DFU): $(HEX)
 	./dfuse-pack.py -i $< $@
@@ -52,7 +57,7 @@ $(ELF): $(PROJECT).ino $(RUSTLIB)
 	rm -rf $(TMP)*
 	- arduino-cli compile --fqbn STMicroelectronics:stm32:Gen$(GEN):pnum=$(PNUM),usb=CDCgen --build-path $(OBJDIR)
 	mv $(TMP)*/core.a obj/core.a
-	$(HOME)/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/10.3.1-2.3/bin/arm-none-eabi-gcc \
+	$(HOME)/.arduino15/packages/STMicroelectronics/tools/xpack-arm-none-eabi-gcc/$(GCC)/bin/arm-none-eabi-gcc \
 	-mcpu=cortex-m4 \
 	-mfpu=fpv4-sp-d16 \
 	-mfloat-abi=hard \
